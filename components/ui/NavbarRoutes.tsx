@@ -15,13 +15,13 @@ export const NavbarRoutes = () => {
       {isTeacherPage || isPlayerPage ? (
         <Link href="/">
           <Button size={"sm"} variant={"ghost"}>
-            Learning mode
+            Learn
           </Button>
         </Link>
       ) : (
         <Link href="/teacher/courses">
           <Button size={"sm"} variant={"ghost"}>
-            Teacher mode
+            Teach
           </Button>
         </Link>
       )}
