@@ -131,7 +131,7 @@ export const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
             items={initialData.chapters || []}
             />
       </div>)}
-        {isCreating && (
+        {!isCreating && (
           <p className="text-xs text-muted-foreground mt-4">
             Drag and drop to reorder the chapters.
           </p>
