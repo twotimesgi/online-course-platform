@@ -65,7 +65,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
   const totalFields = requiredFields.length;
   const completedFields = requiredFields.filter(Boolean).length;
   const completionText = `(${completedFields}/${totalFields})`;
-  const isComplete = requiredFields.every(Boolean);
+  const isCompleted = requiredFields.every(Boolean);
   return (
     <>
     {!course.isPublished && (
@@ -82,7 +82,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
           </span>
         </div>
         <Actions
-        disabled={!isComplete}
+        disabled={!isCompleted}
         courseId={params.courseId}
         isPublished={course.isPublished}
         />

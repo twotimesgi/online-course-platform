@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 interface CourseSidebarItemProps {
   id: string;
   label: string;
-  isComplete: boolean;
+  isCompleted: boolean;
   isLocked: boolean;
   courseId: string;
 }
@@ -15,14 +15,14 @@ interface CourseSidebarItemProps {
 export const CourseSidebarItem = ({
   id,
   label,
-  isComplete,
+  isCompleted,
   isLocked,
   courseId,
 }: CourseSidebarItemProps) => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const Icon = isLocked ? LockIcon : isComplete ? CheckCircle : PlayCircle;
+  const Icon = isLocked ? LockIcon : isCompleted ? CheckCircle : PlayCircle;
   const isActive = pathname.includes(id);
 
   const onClick = () => {
@@ -35,8 +35,8 @@ export const CourseSidebarItem = ({
       className={cn(
         "flex items-center gap-x-2 text-slate-500 text-sm font-[500] pl-6 transition-all hover:text-slate-600 hover:bg-slate-300/20",
         isActive && "text-slate-700 bg-slate-200/20 hover:text-slate-700",
-        isComplete && "text-emerald-700 hover:text-emerald-700",
-        isComplete && isActive && "bg-emerald-200/20"
+        isCompleted && "text-emerald-700 hover:text-emerald-700",
+        isCompleted && isActive && "bg-emerald-200/20"
       )}
     >
       <div className="flex items-center gap-x-2 py-4">
@@ -45,7 +45,7 @@ export const CourseSidebarItem = ({
           className={cn(
             "text-slate-500",
             isActive && "text-slate-700",
-            isComplete && "text-emerald-700"
+            isCompleted && "text-emerald-700"
           )}
         />
         {label}
@@ -54,7 +54,7 @@ export const CourseSidebarItem = ({
         className={cn(
           "ml-auto opacity-0 border-2 border-slate-700 h-full transition-all",
           isActive && "opacity-100",
-          isComplete && "border-emerald-700"
+          isCompleted && "border-emerald-700"
         )}
       />
     </button>
