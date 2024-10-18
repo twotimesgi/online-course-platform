@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Online Course Platform
 
-## Getting Started
+A full-featured online course platform where students can browse, purchase, and track their progress across various courses, while teachers can create and manage course content. Built with modern web technologies, this platform offers a seamless experience for both students and educators.
 
-First, run the development server:
+## 🚀 [Demo](https://online-course-platform-iota.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🎓 **Browse & Filter Courses:** Discover available courses with advanced filtering options.
+- 💳 **Purchase Courses via Stripe:** Securely purchase courses using Stripe integration.
+- ✅ **Track Course Progress:** Mark chapters as completed/uncompleted, with progress tracking for each course.
+- 📊 **Student Dashboard:** A personalized dashboard for students to view enrolled courses and track progress.
+- 🧑‍🏫 **Teacher Mode:** Teachers can create and manage courses, chapters, and course materials.
+- 📚 **Create Courses & Chapters:** Teachers can easily add new courses and chapters, reorder chapters with drag-and-drop functionality.
+- 📂 **Upload Course Content:** Upload thumbnails, attachments, and videos using UploadThing, with video processing powered by Mux.
+- 🎥 **HLS Video Player:** Stream videos using Mux's HLS video player for smooth viewing.
+- 📝 **Rich Text Editor:** Teachers can use a rich text editor to create detailed chapter descriptions.
+- 🔒 **Authentication with Clerk:** Secure user authentication and account management.
+- 🛠️ **ORM with Prisma:** Efficient and scalable database interactions using Prisma.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ⚛️ **Next.js 13:** React-based framework with server-side rendering and static generation.
+- 💳 **Stripe:** Seamless payment processing for course purchases.
+- 🎥 **Mux:** Video streaming and processing with HLS support for course videos.
+- 🖼️ **UploadThing:** For handling file uploads (thumbnails, attachments, and videos).
+- 🎨 **Shadcn UI & Tailwind CSS:** Modern and responsive UI components with custom styling.
+- 🗄️ **Prisma & MySQL:** Powerful ORM and database for managing users, courses, and content.
+- 🔒 **Clerk:** Authentication and user management solution.
+- ⚡ **Vercel:** Fast deployment and serverless hosting.
+- 🏗️ **Zustand:** For state management within the application.
+- 🛡️ **Zod:** Schema validation for ensuring data integrity.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The app is fully deployed on Vercel. You can access the demo at:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Online Course Platform Demo](https://online-course-platform-iota.vercel.app/)
