@@ -32,7 +32,10 @@ export const NavbarRoutes = () => {
           </Button>
         </Link>
       )}
-      <UserButton />
+      <span className="shrink-0 flex items-center">
+      <UserButton 
+      />
+      </span>
     </div>
     </>
   );
