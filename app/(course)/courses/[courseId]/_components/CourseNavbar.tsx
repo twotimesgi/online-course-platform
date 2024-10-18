@@ -21,14 +21,6 @@ export const CourseNavbar =  async ({
 
   if (!userId) redirect("/");
 
-  const purchase = await db.purchase.findUnique({
-    where: {
-        userId_courseId:{
-            userId,
-            courseId: course.id
-        }
-    }
-  })
   return (
     <div className="p-4 border-b h-full flex items-center bg-white shadow-sm">
         <CourseMobileSidebar

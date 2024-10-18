@@ -1,6 +1,5 @@
 import { getChapter } from "@/actions/getChapter";
 import { Banner } from "@/components/Banner";
-import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { VideoPlayer } from "./_components/VideoPlayer";
