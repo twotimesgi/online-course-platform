@@ -55,7 +55,7 @@ export function Combobox({
         <Command>
           <CommandInput placeholder="Search category..." />
           <CommandList>
-            <CommandEmpty>No framework found.</CommandEmpty>
+            <CommandEmpty>No category found.</CommandEmpty>
             <CommandGroup>
               {options.map((option) => (
                 <CommandItem
