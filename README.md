@@ -2,6 +2,9 @@
 
 A full-featured online course platform where students can browse, purchase, and track their progress across various courses, while teachers can create and manage course content. Built with modern web technologies, this platform offers a seamless experience for both students and educators.
 
+*Note on Video Player*
+This project uses the Mux Video API to host and stream video content. Please note that since I'm currently using the free trial plan, Mux automatically deletes uploaded videos after 24 hours. This means that the video player may not function on existing courses if the videos have been removed by Mux. However, you can still create a new course and upload fresh videos to test the player functionality.
+
 ## 🚀 [Demo](https://online-course-platform-iota.vercel.app/)
 
 ## Key Features
